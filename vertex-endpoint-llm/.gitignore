@@ -1,0 +1,4 @@
+# Per-deploy artifacts (endpoint IDs are environment-specific)
+endpoint-*.json
+__pycache__/
+*.pyc

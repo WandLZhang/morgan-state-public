@@ -198,7 +198,7 @@ fi
 # latest published copy even if this clone is stale; the repo-local file is the offline fallback.
 say "6c) Lab bucket + notebook staging"
 LAB_BUCKET="$PROJECT-researcher-day"
-NOTEBOOK_URL="https://raw.githubusercontent.com/WandLZhang/morgan-state-public/main/msu-researcher-day.ipynb"
+NOTEBOOK_URL="https://raw.githubusercontent.com/WandLZhang/morgan-state-public/main/researcher-day/msu-researcher-day.ipynb"
 NOTEBOOK_LOCAL="$(cd "$(dirname "$0")" && pwd)/../msu-researcher-day.ipynb"
 if gcloud storage buckets describe "gs://$LAB_BUCKET" --format="value(name)" >/dev/null 2>&1; then
   ok "bucket gs://$LAB_BUCKET exists"
